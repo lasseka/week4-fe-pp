@@ -1,6 +1,6 @@
-function Tour({ image, date, title, info, location, duration, cost }) {
+function Tour({ image, date, title, info, location, duration, cost, onClick }) {
   return (
-    <article className="tour-card">
+    <article className="tour-card" onClick={onClick}>
       <div className="tour-img-container">
         <img src={image} className="tour-img" alt={title} />
         <p className="tour-date">{date}</p>

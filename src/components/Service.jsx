@@ -1,6 +1,6 @@
-const Service = ({ icon, title, text }) => {
+const Service = ({ icon, title, text, onClick }) => {
   return (
-    <article className='service'>
+    <article className='service' onClick={onClick}>
       <span className='service-icon'>
         <i className={icon}></i>
       </span>
